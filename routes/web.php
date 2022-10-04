@@ -16,3 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/me', function(){
+    return [
+        'Name' => 'Thoriq',
+        'Kelas' => 'XII RPL 0',
+        'NIS' => '123456',
+    ];
+});

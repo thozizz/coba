@@ -17,7 +17,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/me', function(){
+Route::get('/me', function () {
+    return [
+        'Name' => 'Thoriq',
+        'Kelas' => 'XII RPL 0',
+        'NIS' => '123456',
+    ];
+});
+
+Route::get('saya', function () {
     return [
         'Name' => 'Thoriq',
         'Kelas' => 'XII RPL 0',
